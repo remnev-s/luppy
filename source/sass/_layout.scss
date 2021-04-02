@@ -1,0 +1,474 @@
+.main-page {
+	background-color: var(--color-primary);
+	height: 67.2rem;
+}
+
+.wrapper {
+	max-width: 100.6rem;
+	margin: 0 auto;
+	// border: 5px solid grey;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	height: 67.2rem;
+	background-image: url(../img/brown_dog.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+
+	&__logo {
+		padding-top: 3.5rem;
+	}
+
+	&__promo {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		flex-direction: column;
+		max-width: 49rem;
+		color: var(--color-dark-blue);
+		h1 {
+			font-size: 7.2rem;
+			font-weight: 900;
+			line-height: 6.4rem;
+			letter-spacing: -0.1rem;
+		}
+		p {
+			font-size: 1.8rem;
+			font-weight: 700;
+			line-height: 3rem;
+			margin-top: 3rem;
+		}
+	}
+	&__btn {
+		display: block;
+		width: 16rem;
+		height: 4rem;
+		padding: 1rem 0;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-weight: 600;
+		color: var(--color-dark-blue);
+		text-align: center;
+		text-decoration: none;
+		border-radius: 2rem;
+		background-color: #fff;
+		margin-top: 2.9rem;
+	}
+}
+
+.advantage {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: center;
+	color: var(--dark-font);
+
+	margin-top: 12.5rem;
+	margin-bottom: 13.5rem;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__inner-title {
+		font-size: 3.2rem;
+		font-weight: 700;
+		line-height: 3.7rem;
+		letter-spacing: -0.1rem;
+		margin: 3.8rem 0 2rem;
+	}
+	&__inner-text {
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		text-align: center;
+		width: 29rem;
+	}
+}
+
+.get-app {
+	background-color: var(--color-lighgreey);
+}
+
+.banner {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 12rem;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		width: 56rem;
+		height: 110%;
+		left: -7rem;
+		top: -6.1rem;
+		position: absolute;
+		background-image: url(../img/iPhone_12.png);
+		background-repeat: no-repeat;
+	}
+}
+.tools {
+	padding-top: 13.1rem;
+	padding-bottom: 14rem;
+
+	&__title {
+		width: 41.9rem;
+		font-size: 4.8rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+		letter-spacing: -0.1rem;
+	}
+	&__text {
+		width: 35.5rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 3rem;
+		padding: 2.4rem 0 4rem;
+	}
+
+	&__link:first-child {
+	}
+	a:first-of-type {
+		padding-right: 2.9rem;
+	}
+}
+
+.proposal {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 12rem;
+	&__card {
+		position: relative;
+		width: 48.8rem;
+		min-height: 84.4rem;
+		padding: 3rem;
+		box-shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
+		border-radius: 1.6rem;
+		border: 1px solid #000;
+
+		&:first-of-type {
+			margin-right: 3rem;
+		}
+	}
+	&__card-title {
+		font-size: 4.8rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+		letter-spacing: -0.1rem;
+	}
+	&__card-subtitle {
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3rem;
+		margin: 0.6rem 0 2.2rem;
+	}
+	&__card-text {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 3rem;
+
+		p:first-of-type {
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+.card-1 {
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		top: 47.7rem;
+		right: 0;
+
+		background-image: url(../img/dog.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.card-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		top: 0;
+		right: 0;
+
+		background-image: url(../img/hifive.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.video {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 9.8rem;
+
+	background-image: url(../img/woman_with_dog.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 10rem;
+	min-height: 62rem;
+}
+
+.cont {
+	&__title {
+		font-size: 5.2rem;
+		font-weight: 800;
+		line-height: 5.4rem;
+		letter-spacing: -0.1rem;
+		color: var(--white-font);
+		width: 45.3rem;
+	}
+	&__btn {
+		position: relative;
+		display: block;
+		font-size: 1.4rem;
+		font-weight: 600;
+		line-height: 2rem;
+		padding: 1rem 1.8rem 1rem 4.6rem;
+		background-color: #fff;
+		border: none;
+		border-radius: 2rem;
+		margin-top: 3.2rem;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 2.1rem;
+			top: 1.2rem;
+			width: 1.8rem;
+			height: 1.8rem;
+			background-image: url(../img/play-video.svg);
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.progress {
+	background-color: var(--color-lighgreey);
+}
+
+.plane {
+	position: relative;
+	padding: 13.7rem 0 10.6rem;
+	margin-bottom: 10rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 23rem;
+		width: 3.8rem;
+		height: 3.8rem;
+		background-image: url(../img/Icon-paw.svg);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+
+		left: 3.2rem;
+		top: 45%;
+
+		height: 1rem;
+		width: 97%;
+
+		border-top: 2px dashed black;
+	}
+	&__title {
+		font-size: 4.8rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+		letter-spacing: -0.1rem;
+		padding-bottom: 11rem;
+		position: relative;
+	}
+	span {
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 3rem;
+		letter-spacing: -0.03rem;
+	}
+}
+
+.timeline {
+	display: flex;
+	justify-content: space-between;
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 3rem;
+		width: 31.2rem;
+		position: relative;
+	}
+}
+.decoration {
+	p {
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -6.2rem;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 50%;
+			border: 2px solid #000;
+			background-color: var(--color-lighgreey);
+			z-index: 1;
+		}
+	}
+}
+
+.subscribe {
+	position: relative;
+	padding: 5rem;
+	border-radius: 1.6rem;
+	border: 1px solid #000;
+	margin-bottom: 20rem;
+	box-shadow: var(--shadow);
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/hand_push.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		border-radius: 1.6rem;
+	}
+}
+
+.form {
+	&__title {
+		font-size: 4.8rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+		letter-spacing: 0.1rem;
+	}
+	&__description {
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3rem;
+		width: 43.6rem;
+		padding: 1.6rem 0 3.6rem;
+	}
+}
+.mail {
+	margin-top: 6.5rem;
+	p {
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3rem;
+	}
+}
+.mail {
+	margin-top: 6.5rem;
+	p {
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3rem;
+	}
+}
+.send {
+	position: relative;
+	input {
+		width: 33rem;
+		padding-bottom: 1.6rem;
+		border: none;
+		border-bottom: 1px solid #000;
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 3rem;
+		&:focus {
+			outline: none;
+		}
+	}
+	button {
+		position: absolute;
+		left: 30.5rem;
+		top: 0.4rem;
+		border: none;
+		width: 2.6rem;
+		height: 2.6rem;
+		background-image: url(../img/Icon-arrow-right.svg);
+		background-repeat: no-repeat;
+		background-color: transparent;
+	}
+}
+
+.mail {
+	margin-top: 4.5rem;
+	p {
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3rem;
+	}
+}
+
+.footer {
+	margin-bottom: 10rem;
+	pading: 30rem;
+	display: flex;
+	justify-content: space-between;
+
+	&__copyright {
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 3rem;
+		padding-left: 3rem;
+	}
+	&__social-link {
+		display: flex;
+		a {
+			text-decoration: none;
+			font-size: 1.8rem;
+			font-weight: 300;
+			line-height: 3rem;
+			color: var(--dark-font);
+		}
+		a:last-of-type {
+			padding-right: 3rem;
+		}
+
+		li {
+			list-style: none;
+		}
+	}
+}
