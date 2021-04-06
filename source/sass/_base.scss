@@ -19,6 +19,11 @@
 	// --line: 1px solid var(--Grey-light-3);
 }
 
+$bp-large: 960px;
+$bp-medium: 720px;
+$bp-small: 375px;
+$bp-smallest: 320px;
+
 * {
 	margin: 0;
 	padding: 0;

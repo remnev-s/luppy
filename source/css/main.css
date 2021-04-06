@@ -44,6 +44,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +295,10 @@ body {
 }
 
 .video {
+  margin-bottom: 10rem;
+}
+
+.cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,12 +309,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 9.8rem;
   background-image: url(../img/woman_with_dog.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 10rem;
+  background-position: right bottom;
   min-height: 62rem;
+  border-radius: 1.6rem;
+  padding-left: 9.8rem;
 }
 
 .cont__title {
@@ -319,6 +329,7 @@ body {
 .cont__btn {
   position: relative;
   display: block;
+  width: 15.5rem;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2rem;

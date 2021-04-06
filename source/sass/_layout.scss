@@ -7,6 +7,9 @@
 	max-width: 100.6rem;
 	margin: 0 auto;
 	// border: 5px solid grey;
+	@media only screen and (max-width: $bp-large) {
+		padding: 0 1.5rem;
+	}
 }
 
 .header {
@@ -212,19 +215,21 @@
 }
 
 .video {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-left: 9.8rem;
-
-	background-image: url(../img/woman_with_dog.png);
-	background-repeat: no-repeat;
-	background-size: cover;
 	margin-bottom: 10rem;
-	min-height: 62rem;
 }
 
 .cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../img/woman_with_dog.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	min-height: 62rem;
+
+	border-radius: 1.6rem;
+	padding-left: 9.8rem;
+
 	&__title {
 		font-size: 5.2rem;
 		font-weight: 800;
@@ -236,6 +241,7 @@
 	&__btn {
 		position: relative;
 		display: block;
+		width: 15.5rem;
 		font-size: 1.4rem;
 		font-weight: 600;
 		line-height: 2rem;
