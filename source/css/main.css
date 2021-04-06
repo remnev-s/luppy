@@ -356,10 +356,17 @@ body {
   background-color: var(--color-lighgreey);
 }
 
+@media only screen and (max-width: 960px) {
+  .progress {
+    padding: 0 1.5rem;
+  }
+}
+
 .plane {
   position: relative;
   padding: 13.7rem 0 10.6rem;
   margin-bottom: 10rem;
+  outline: 1px solid red;
 }
 
 .plane::before {
@@ -436,6 +443,12 @@ body {
   margin-bottom: 20rem;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+
+@media only screen and (max-width: 960px) {
+  .subscribe {
+    margin: 0 1.5rem 20rem;
+  }
 }
 
 .subscribe::before {
