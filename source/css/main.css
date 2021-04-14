@@ -34,11 +34,6 @@ body {
   line-height: 1.6;
 }
 
-.main-page {
-  background-color: var(--color-primary);
-  height: 67.2rem;
-}
-
 .wrapper {
   max-width: 100.6rem;
   margin: 0 auto;
@@ -50,18 +45,33 @@ body {
   }
 }
 
-.header {
+@media only screen and (max-width: 720px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+.test {
+  background-color: var(--color-primary);
+}
+
+.main-page {
+  background-color: var(--color-primary);
+  height: 67.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 67.2rem;
-  background-image: url(../img/brown_dog.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-page {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
 }
 
 .header__logo {
@@ -80,22 +90,49 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 49rem;
   color: var(--color-dark-blue);
 }
 
-.header__promo h1 {
+.header__promo-title {
   font-size: 7.2rem;
   font-weight: 900;
   line-height: 6.4rem;
   letter-spacing: -0.1rem;
 }
 
-.header__promo p {
+@media only screen and (max-width: 960px) {
+  .header__promo-title {
+    width: 44rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .header__promo-title {
+    width: 40rem;
+    font-size: 6.4rem;
+  }
+}
+
+.header__promo-text {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .header__promo-text {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo-image {
+    position: absolute;
+    width: 31.7rem;
+    bottom: -5rem;
+    z-index: -1;
+  }
 }
 
 .header__btn {
@@ -112,6 +149,13 @@ body {
   border-radius: 2rem;
   background-color: #fff;
   margin-top: 2.9rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .header__btn {
+    width: 28rem;
+    margin: 10rem 0;
+  }
 }
 
 .advantage {
@@ -366,7 +410,6 @@ body {
   position: relative;
   padding: 13.7rem 0 10.6rem;
   margin-bottom: 10rem;
-  outline: 1px solid red;
 }
 
 .plane::before {

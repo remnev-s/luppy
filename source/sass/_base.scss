@@ -1,63 +1,51 @@
 :root {
-	--color-primary: #ffd43d;
-	--color-primary-light: #edeff0;
-	--color-dark-blue: #040054;
-	--dark-font: #000000;
-	--white-font: #fff;
-	--color-lighgreey: #edeff0;
-	--shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
-	// --Grey-light-2: #f4f2f2;
-	// --Grey-light-3: #f0eeee;
-	// --Grey-light-4: #ccc;
-
-	// --Grey-dark-1: #333;
-	// --Grey-dark-2: #777;
-	// --Grey-dark-3: #999;
-
-	// --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-	// --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.3);
-	// --line: 1px solid var(--Grey-light-3);
+  --color-primary: #ffd43d;
+  --color-primary-light: #edeff0;
+  --color-dark-blue: #040054;
+  --dark-font: #000000;
+  --white-font: #fff;
+  --color-lighgreey: #edeff0;
+  --shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
 }
-
 $bp-large: 960px;
 $bp-medium: 720px;
 $bp-small: 375px;
 $bp-smallest: 320px;
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
-	font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
 
-	// @media only screen and (max-width: $bp-large) {
-	// 	font-size: 50%;
-	// }
+  // @media only screen and (max-width: $bp-large) {
+  // 	font-size: 50%;
+  // }
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	line-height: 1.6;
-	// > * {
-	// 	outline: 2px solid deeppink;
-	// }
-	// > * > * {
-	// 	outline: 2px dashed lime;
-	// 	outline-offset: -2px;
-	// }
-	// > * > * > * {
-	// 	outline: 2px dotted dodgerblue;
-	// 	outline-offset: -4px;
-	// }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  // > * {
+  // 	outline: 2px solid deeppink;
+  // }
+  // > * > * {
+  // 	outline: 2px dashed lime;
+  // 	outline-offset: -2px;
+  // }
+  // > * > * > * {
+  // 	outline: 2px dotted dodgerblue;
+  // 	outline-offset: -4px;
+  // }
 }
