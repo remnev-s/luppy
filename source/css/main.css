@@ -34,6 +34,10 @@ body {
   line-height: 1.6;
 }
 
+body a {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 100.6rem;
   margin: 0 auto;
@@ -53,6 +57,7 @@ body {
 
 .test {
   background-color: var(--color-primary);
+  overflow: hidden;
 }
 
 .main-page {
@@ -64,74 +69,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  padding: 0 3rem;
+}
+
+.main-page__wrapper {
+  max-width: 100.6rem;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 375px) {
   .main-page {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-}
-
-.header__logo {
-  padding-top: 3.5rem;
-}
-
-.header__promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: var(--color-dark-blue);
-}
-
-.header__promo-title {
-  font-size: 7.2rem;
-  font-weight: 900;
-  line-height: 6.4rem;
-  letter-spacing: -0.1rem;
-}
-
-@media only screen and (max-width: 960px) {
-  .header__promo-title {
-    width: 44rem;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .header__promo-title {
-    width: 40rem;
-    font-size: 6.4rem;
-  }
-}
-
-.header__promo-text {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 3rem;
-  margin-top: 3rem;
-}
-
-@media only screen and (max-width: 720px) {
-  .header__promo-text {
-    font-size: 2.4rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .header__promo-image {
-    position: absolute;
-    width: 31.7rem;
-    bottom: -5rem;
-    z-index: -1;
+    height: 81.2rem;
   }
 }
 
@@ -155,6 +105,127 @@ body {
   .header__btn {
     width: 28rem;
     margin: 10rem 0;
+    margin-top: 30.2rem;
+  }
+}
+
+.header__logo {
+  padding-top: 3.5rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .header__logo {
+    text-align: center;
+    padding-top: 7.1rem;
+  }
+}
+
+.header__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--color-dark-blue);
+  max-width: 48rem;
+  padding-top: 17.5rem;
+  margin-right: 30rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo {
+    height: 100%;
+    padding-top: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__promo-title {
+  font-size: 7.2rem;
+  font-weight: 900;
+  line-height: 6.4rem;
+  letter-spacing: -0.1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .header__promo-title {
+    max-width: 40rem;
+    font-size: 6.4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo-title {
+    text-align: center;
+    font-size: 4.8rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.header__promo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .header__promo-text {
+    font-size: 2.4rem;
+    max-width: 39rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo-text {
+    display: none;
+  }
+}
+
+.header__promo-image {
+  position: absolute;
+  margin-left: 1rem;
+  right: -15rem;
+  bottom: -5rem;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo-image {
+    max-width: 31.7rem;
+    right: -3rem;
+    bottom: 0;
+  }
+}
+
+.header__promo-textmobile {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .header__promo-textmobile {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: fff;
+    text-align: center;
+    padding-top: 3.6rem;
   }
 }
 

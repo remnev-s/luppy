@@ -11,66 +11,28 @@
 }
 .test {
   background-color: var(--color-primary);
+  overflow: hidden;
 }
 .main-page {
   background-color: var(--color-primary);
   height: 67.2rem;
-  // overflow: hidden;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  padding: 0 3rem;
+
+  &__wrapper {
+    max-width: 100.6rem;
+    margin: 0 auto;
+    z-index: 1;
+  }
 
   @media only screen and (max-width: $bp-small) {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    height: 81.2rem;
   }
 }
 
 .header {
-  &__logo {
-    padding-top: 3.5rem;
-  }
-
-  &__promo {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    color: var(--color-dark-blue);
-
-    &-title {
-      font-size: 7.2rem;
-      font-weight: 900;
-      line-height: 6.4rem;
-      letter-spacing: -0.1rem;
-      @media only screen and (max-width: $bp-large) {
-        width: 44rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        width: 40rem;
-        font-size: 6.4rem;
-      }
-    }
-    &-text {
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 3rem;
-      margin-top: 3rem;
-      @media only screen and (max-width: $bp-medium) {
-        font-size: 2.4rem;
-      }
-    }
-
-    &-image {
-      @media only screen and (max-width: $bp-small) {
-        position: absolute;
-        width: 31.7rem;
-        bottom: -5rem;
-        z-index: -1;
-      }
-    }
-  }
   &__btn {
     display: block;
     width: 16rem;
@@ -88,6 +50,87 @@
     @media only screen and (max-width: $bp-small) {
       width: 28rem;
       margin: 10rem 0;
+      margin-top: 30.2rem;
+    }
+  }
+
+  &__logo {
+    padding-top: 3.5rem;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      padding-top: 7.1rem;
+    }
+  }
+
+  &__promo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-dark-blue);
+    max-width: 48rem;
+    padding-top: 17.5rem;
+    margin-right: 30rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 100%;
+      padding-top: 0;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 7.2rem;
+      font-weight: 900;
+      line-height: 6.4rem;
+      letter-spacing: -0.1rem;
+      @media only screen and (max-width: $bp-medium) {
+        max-width: 40rem;
+        font-size: 6.4rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        text-align: center;
+        font-size: 4.8rem;
+        padding-top: 2.5rem;
+      }
+    }
+    &-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 3rem;
+      margin-top: 3rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2.4rem;
+        max-width: 39rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
+    &-image {
+      position: absolute;
+      margin-left: 1rem;
+      right: -15rem;
+      bottom: -5rem;
+      z-index: -1;
+      @media only screen and (max-width: $bp-small) {
+        max-width: 31.7rem;
+        right: -3rem;
+        bottom: 0;
+      }
+    }
+    &-textmobile {
+      display: none;
+      @media only screen and (max-width: $bp-small) {
+        display: block;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        color: fff;
+        text-align: center;
+        padding-top: 3.6rem;
+      }
     }
   }
 }
