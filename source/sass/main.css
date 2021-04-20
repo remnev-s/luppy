@@ -18,13 +18,11 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
@@ -33,7 +31,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
 }
-
 body a {
   text-decoration: none;
 }
@@ -42,13 +39,11 @@ body a {
   max-width: 100.6rem;
   margin: 0 auto;
 }
-
 @media only screen and (max-width: 960px) {
   .wrapper {
     padding: 0 1.5rem;
   }
 }
-
 @media only screen and (max-width: 720px) {
   .wrapper {
     padding: 0 1.5rem;
@@ -63,22 +58,16 @@ body a {
 .main-page {
   background-color: var(--color-primary);
   height: 67.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
   padding: 0 3rem;
 }
-
 .main-page__wrapper {
   max-width: 100.6rem;
   margin: 0 auto;
   z-index: 1;
 }
-
 @media only screen and (max-width: 375px) {
   .main-page {
     height: 81.2rem;
@@ -100,7 +89,6 @@ body a {
   background-color: #fff;
   margin-top: 2.9rem;
 }
-
 @media only screen and (max-width: 375px) {
   .header__btn {
     width: 28rem;
@@ -108,68 +96,49 @@ body a {
     margin-top: 30.2rem;
   }
 }
-
 .header__logo {
   padding-top: 3.5rem;
 }
-
 @media only screen and (max-width: 375px) {
   .header__logo {
     text-align: center;
     padding-top: 7.1rem;
   }
 }
-
 .header__promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   color: var(--color-dark-blue);
   max-width: 48rem;
   padding-top: 17.5rem;
   margin-right: 30rem;
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo {
     margin-right: 0;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo {
     height: 100%;
     padding-top: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
-
 .header__promo-title {
   font-size: 7.2rem;
   font-weight: 900;
   line-height: 6.4rem;
   letter-spacing: -0.1rem;
 }
-
 @media only screen and (max-width: 720px) {
   .header__promo-title {
     max-width: 40rem;
     font-size: 6.4rem;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo-title {
     text-align: center;
@@ -177,27 +146,23 @@ body a {
     padding-top: 2.5rem;
   }
 }
-
 .header__promo-text {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
   margin-top: 3rem;
 }
-
 @media only screen and (max-width: 720px) {
   .header__promo-text {
     font-size: 2.4rem;
     max-width: 39rem;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo-text {
     display: none;
   }
 }
-
 .header__promo-image {
   position: absolute;
   margin-left: 1rem;
@@ -205,7 +170,6 @@ body a {
   bottom: -5rem;
   z-index: -1;
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo-image {
     max-width: 31.7rem;
@@ -213,11 +177,9 @@ body a {
     bottom: 0;
   }
 }
-
 .header__promo-textmobile {
   display: none;
 }
-
 @media only screen and (max-width: 375px) {
   .header__promo-textmobile {
     display: block;
@@ -231,68 +193,40 @@ body a {
 
 .advantage {
   outline: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
   color: var(--dark-font);
   margin-top: 12.5rem;
   margin-bottom: 13.5rem;
 }
-
 @media only screen and (max-width: 720px) {
   .advantage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
-
 .advantage__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .advantage__inner-wrapper {
   outline: 1px solid black;
 }
-
 .advantage__inner-img {
-  width: 15rem;
+  width: 17rem;
 }
-
 @media only screen and (max-width: 720px) {
   .advantage__inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     outline: 1px solid blue;
-    -ms-flex-line-pack: stretch;
-        align-content: stretch;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    align-content: stretch;
+    justify-content: space-around;
     width: 100%;
   }
 }
-
 .advantage__inner-title {
   font-size: 3.2rem;
   font-weight: 700;
@@ -300,7 +234,6 @@ body a {
   letter-spacing: -0.1rem;
   margin: 3.8rem 0 2rem;
 }
-
 .advantage__inner-text {
   font-size: 1.6rem;
   font-weight: 400;
@@ -308,7 +241,6 @@ body a {
   text-align: center;
   width: 29rem;
 }
-
 @media only screen and (max-width: 720px) {
   .advantage__inner-text {
     text-align: left;
@@ -320,16 +252,11 @@ body a {
 }
 
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-bottom: 12rem;
   position: relative;
 }
-
 .banner::after {
   content: "";
   width: 56rem;
@@ -345,7 +272,6 @@ body a {
   padding-top: 13.1rem;
   padding-bottom: 14rem;
 }
-
 .tools__title {
   width: 41.9rem;
   font-size: 4.8rem;
@@ -353,7 +279,6 @@ body a {
   line-height: 5.5rem;
   letter-spacing: -0.1rem;
 }
-
 .tools__text {
   width: 35.5rem;
   font-size: 1.8rem;
@@ -361,56 +286,44 @@ body a {
   line-height: 3rem;
   padding: 2.4rem 0 4rem;
 }
-
 .tools a:first-of-type {
   padding-right: 2.9rem;
 }
 
 .proposal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 12rem;
 }
-
 .proposal__card {
   position: relative;
   width: 48.8rem;
   min-height: 84.4rem;
   padding: 3rem;
-  -webkit-box-shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
-          box-shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
+  box-shadow: 1.8rem 1.8rem 2.4rem rgba(0, 0, 0, 0.08);
   border-radius: 1.6rem;
   border: 1px solid #000;
 }
-
 .proposal__card:first-of-type {
   margin-right: 3rem;
 }
-
 .proposal__card-title {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 5.5rem;
   letter-spacing: -0.1rem;
 }
-
 .proposal__card-subtitle {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
   margin: 0.6rem 0 2.2rem;
 }
-
 .proposal__card-text {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
 }
-
 .proposal__card-text p:first-of-type {
   padding-bottom: 2rem;
 }
@@ -427,18 +340,10 @@ body a {
 }
 
 .card-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
 .card-2::before {
   content: "";
   position: absolute;
@@ -455,16 +360,9 @@ body a {
 }
 
 .cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   background-image: url(../img/woman_with_dog.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -472,7 +370,6 @@ body a {
   border-radius: 1.6rem;
   padding-left: 9.8rem;
 }
-
 .cont__title {
   font-size: 5.2rem;
   font-weight: 800;
@@ -481,7 +378,6 @@ body a {
   color: var(--white-font);
   width: 45.3rem;
 }
-
 .cont__btn {
   position: relative;
   display: block;
@@ -496,7 +392,6 @@ body a {
   margin-top: 3.2rem;
   cursor: pointer;
 }
-
 .cont__btn::before {
   content: "";
   position: absolute;
@@ -511,7 +406,6 @@ body a {
 .progress {
   background-color: var(--color-lighgreey);
 }
-
 @media only screen and (max-width: 960px) {
   .progress {
     padding: 0 1.5rem;
@@ -523,7 +417,6 @@ body a {
   padding: 13.7rem 0 10.6rem;
   margin-bottom: 10rem;
 }
-
 .plane::before {
   content: "";
   position: absolute;
@@ -533,7 +426,6 @@ body a {
   height: 3.8rem;
   background-image: url(../img/Icon-paw.svg);
 }
-
 .plane::after {
   content: "";
   position: absolute;
@@ -543,7 +435,6 @@ body a {
   width: 97%;
   border-top: 2px dashed black;
 }
-
 .plane__title {
   font-size: 4.8rem;
   font-weight: 700;
@@ -552,7 +443,6 @@ body a {
   padding-bottom: 11rem;
   position: relative;
 }
-
 .plane span {
   font-size: 1.8rem;
   font-weight: 700;
@@ -561,14 +451,9 @@ body a {
 }
 
 .timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .timeline__text {
   font-size: 1.8rem;
   font-weight: 400;
@@ -596,16 +481,13 @@ body a {
   border-radius: 1.6rem;
   border: 1px solid #000;
   margin-bottom: 20rem;
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
-
 @media only screen and (max-width: 960px) {
   .subscribe {
     margin: 0 1.5rem 20rem;
   }
 }
-
 .subscribe::before {
   content: "";
   position: absolute;
@@ -625,7 +507,6 @@ body a {
   line-height: 5.5rem;
   letter-spacing: 0.1rem;
 }
-
 .form__description {
   font-size: 2.4rem;
   font-weight: 400;
@@ -637,13 +518,11 @@ body a {
 .mail {
   margin-top: 6.5rem;
 }
-
 .mail p {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 3rem;
 }
-
 .mail a {
   text-decoration: none;
   font-size: 2.4rem;
@@ -654,13 +533,11 @@ body a {
 .mail {
   margin-top: 6.5rem;
 }
-
 .mail p {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 3rem;
 }
-
 .mail a {
   text-decoration: none;
   font-size: 2.4rem;
@@ -671,7 +548,6 @@ body a {
 .send {
   position: relative;
 }
-
 .send input {
   width: 33rem;
   padding-bottom: 1.6rem;
@@ -681,11 +557,9 @@ body a {
   font-weight: 300;
   line-height: 3rem;
 }
-
 .send input:focus {
   outline: none;
 }
-
 .send button {
   position: absolute;
   left: 30.5rem;
@@ -701,13 +575,11 @@ body a {
 .mail {
   margin-top: 4.5rem;
 }
-
 .mail p {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 3rem;
 }
-
 .mail a {
   text-decoration: none;
   font-size: 2.4rem;
@@ -718,27 +590,18 @@ body a {
 .footer {
   margin-bottom: 10rem;
   pading: 30rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .footer__copyright {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   padding-left: 3rem;
 }
-
 .footer__social-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .footer__social-link a {
   text-decoration: none;
   font-size: 1.8rem;
@@ -746,11 +609,9 @@ body a {
   line-height: 3rem;
   color: var(--dark-font);
 }
-
 .footer__social-link a:last-of-type {
   padding-right: 3rem;
 }
-
 .footer__social-link li {
   list-style: none;
 }
@@ -759,3 +620,5 @@ body a {
   height: 3rem;
   width: 9rem;
 }
+
+/*# sourceMappingURL=main.css.map */
