@@ -70,6 +70,9 @@
 		max-width: 48rem;
 		padding-top: 17.5rem;
 		margin-right: 30rem;
+		@media only screen and (max-width: $bp-medium) {
+			margin-right: 1rem;
+		}
 		@media only screen and (max-width: $bp-small) {
 			margin-right: 0;
 		}
@@ -136,7 +139,6 @@
 }
 
 .advantage {
-	outline: 1px solid red;
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
@@ -149,24 +151,35 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
+	@media only screen and (max-width: $bp-small) {
+		margin-top: 8rem;
+		margin-bottom: 9rem;
+	}
 
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		&-wrapper {
-			outline: 1px solid black;
-		}
-		&-img {
-			width: 15rem;
-		}
 
 		@media only screen and (max-width: $bp-medium) {
 			flex-direction: row;
-			outline: 1px solid blue;
 			align-content: stretch;
 			justify-content: space-around;
 			width: 100%;
+			&-img {
+				width: 15rem;
+			}
+			&-layout {
+				flex-direction: row-reverse;
+				margin: 1rem 0;
+			}
+		}
+
+		@media only screen and (max-width: $bp-small) {
+			flex-direction: column;
+			&-layout {
+				margin: 2rem 0;
+			}
 		}
 	}
 	&__inner-title {
@@ -175,6 +188,13 @@
 		line-height: 3.7rem;
 		letter-spacing: -0.1rem;
 		margin: 3.8rem 0 2rem;
+		text-align: center;
+		@media only screen and (max-width: $bp-medium) {
+			text-align: left;
+		}
+		@media only screen and (max-width: $bp-small) {
+			text-align: center;
+		}
 	}
 	&__inner-text {
 		font-size: 1.6rem;
@@ -184,6 +204,9 @@
 		width: 29rem;
 		@media only screen and (max-width: $bp-medium) {
 			text-align: left;
+		}
+		@media only screen and (max-width: $bp-small) {
+			text-align: center;
 		}
 	}
 }

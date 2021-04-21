@@ -137,6 +137,12 @@ body a {
   margin-right: 30rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .header__promo {
+    margin-right: 1rem;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .header__promo {
     margin-right: 0;
@@ -230,7 +236,6 @@ body a {
 }
 
 .advantage {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,6 +262,13 @@ body a {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .advantage {
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+  }
+}
+
 .advantage__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,26 +282,39 @@ body a {
           align-items: center;
 }
 
-.advantage__inner-wrapper {
-  outline: 1px solid black;
-}
-
-.advantage__inner-img {
-  width: 15rem;
-}
-
 @media only screen and (max-width: 720px) {
   .advantage__inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    outline: 1px solid blue;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
+  }
+  .advantage__inner-img {
+    width: 15rem;
+  }
+  .advantage__inner-layout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .advantage__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantage__inner-layout {
+    margin: 2rem 0;
   }
 }
 
@@ -299,6 +324,19 @@ body a {
   line-height: 3.7rem;
   letter-spacing: -0.1rem;
   margin: 3.8rem 0 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .advantage__inner-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .advantage__inner-title {
+    text-align: center;
+  }
 }
 
 .advantage__inner-text {
@@ -312,6 +350,12 @@ body a {
 @media only screen and (max-width: 720px) {
   .advantage__inner-text {
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .advantage__inner-text {
+    text-align: center;
   }
 }
 
