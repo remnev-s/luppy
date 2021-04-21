@@ -225,7 +225,6 @@ body a {
 @media only screen and (max-width: 720px) {
   .advantage__inner {
     flex-direction: row;
-    outline: 1px solid blue;
     align-content: stretch;
     justify-content: space-around;
     width: 100%;
@@ -302,10 +301,24 @@ body a {
   background-image: url(../img/iPhone_12.png);
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 720px) {
+  .banner::after {
+    transform: rotate(17deg);
+    left: -20rem;
+    top: -2rem;
+  }
+}
 
 .tools {
   padding-top: 13.1rem;
   padding-bottom: 14rem;
+}
+@media only screen and (max-width: 720px) {
+  .tools {
+    max-width: 33rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
 }
 .tools__title {
   width: 41.9rem;
@@ -314,12 +327,31 @@ body a {
   line-height: 5.5rem;
   letter-spacing: -0.1rem;
 }
+@media only screen and (max-width: 720px) {
+  .tools__title {
+    padding-top: 2rem;
+    width: 33rem;
+  }
+  .tools__title span {
+    display: none;
+  }
+}
 .tools__text {
   width: 35.5rem;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
   padding: 2.4rem 0 4rem;
+}
+@media only screen and (max-width: 720px) {
+  .tools__text {
+    width: 32rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .tools__link-img {
+    width: 14rem;
+  }
 }
 .tools a:first-of-type {
   padding-right: 2.9rem;

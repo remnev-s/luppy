@@ -231,11 +231,21 @@
 		position: absolute;
 		background-image: url(../img/iPhone_12.png);
 		background-repeat: no-repeat;
+		@media only screen and (max-width: $bp-medium) {
+			transform: rotate(17deg);
+			left: -20rem;
+			top: -2rem;
+		}
 	}
 }
 .tools {
 	padding-top: 13.1rem;
 	padding-bottom: 14rem;
+	@media only screen and (max-width: $bp-medium) {
+		max-width: 33rem;
+		padding-top: 8rem;
+		padding-bottom: 7rem;
+	}
 
 	&__title {
 		width: 41.9rem;
@@ -243,6 +253,13 @@
 		font-weight: 700;
 		line-height: 5.5rem;
 		letter-spacing: -0.1rem;
+		@media only screen and (max-width: $bp-medium) {
+			padding-top: 2rem;
+			width: 33rem;
+			span {
+				display: none;
+			}
+		}
 	}
 	&__text {
 		width: 35.5rem;
@@ -250,8 +267,17 @@
 		font-weight: 700;
 		line-height: 3rem;
 		padding: 2.4rem 0 4rem;
+		@media only screen and (max-width: $bp-medium) {
+			width: 32rem;
+		}
 	}
-
+	@media only screen and (max-width: $bp-medium) {
+		&__link {
+			&-img {
+				width: 14rem;
+			}
+		}
+	}
 	&__link:first-child {
 	}
 	a:first-of-type {

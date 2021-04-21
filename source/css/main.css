@@ -385,9 +385,27 @@ body a {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 720px) {
+  .banner::after {
+    -webkit-transform: rotate(17deg);
+        -ms-transform: rotate(17deg);
+            transform: rotate(17deg);
+    left: -20rem;
+    top: -2rem;
+  }
+}
+
 .tools {
   padding-top: 13.1rem;
   padding-bottom: 14rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .tools {
+    max-width: 33rem;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+  }
 }
 
 .tools__title {
@@ -398,12 +416,34 @@ body a {
   letter-spacing: -0.1rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .tools__title {
+    padding-top: 2rem;
+    width: 33rem;
+  }
+  .tools__title span {
+    display: none;
+  }
+}
+
 .tools__text {
   width: 35.5rem;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
   padding: 2.4rem 0 4rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .tools__text {
+    width: 32rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .tools__link-img {
+    width: 14rem;
+  }
 }
 
 .tools a:first-of-type {
