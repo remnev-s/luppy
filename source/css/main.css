@@ -302,7 +302,13 @@ body a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    margin: 1rem 0;
+    margin: 1rem 0 3rem;
+  }
+  .advantage__inner-layout .advantage__inner-title {
+    text-align: right;
+  }
+  .advantage__inner-layout .advantage__inner-text {
+    text-align: right;
   }
 }
 
@@ -330,6 +336,7 @@ body a {
 @media only screen and (max-width: 720px) {
   .advantage__inner-title {
     text-align: left;
+    font-size: 4.2rem;
   }
 }
 
@@ -350,6 +357,9 @@ body a {
 @media only screen and (max-width: 720px) {
   .advantage__inner-text {
     text-align: left;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    width: 35rem;
   }
 }
 
@@ -460,6 +470,13 @@ body a {
   margin-bottom: 12rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .proposal {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .proposal__card {
   position: relative;
   width: 48.8rem;
@@ -471,8 +488,10 @@ body a {
   border: 1px solid #000;
 }
 
-.proposal__card:first-of-type {
-  margin-right: 3rem;
+@media only screen and (max-width: 720px) {
+  .proposal__card {
+    width: 100%;
+  }
 }
 
 .proposal__card-title {
@@ -482,11 +501,24 @@ body a {
   letter-spacing: -0.1rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .proposal__card-title {
+    font-size: 6.4rem;
+  }
+}
+
 .proposal__card-subtitle {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
   margin: 0.6rem 0 2.2rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .proposal__card-subtitle {
+    font-size: 3.6rem;
+    margin: 2.6rem 2rem 2.2rem 0;
+  }
 }
 
 .proposal__card-text {
@@ -495,8 +527,21 @@ body a {
   line-height: 3rem;
 }
 
-.proposal__card-text p:first-of-type {
-  padding-bottom: 2rem;
+@media only screen and (max-width: 720px) {
+  .proposal__card-text {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    max-width: 50rem;
+    padding-top: 1.5rem;
+  }
+  .proposal__card-text_second_paragraph {
+    max-width: 34rem;
+    margin-top: 1rem;
+  }
+}
+
+.card-1 {
+  margin-right: 3rem;
 }
 
 .card-1::before {
@@ -510,6 +555,19 @@ body a {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 720px) {
+  .card-1::before {
+    right: -19rem;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .card-1 {
+    margin-right: 0;
+  }
+}
+
 .card-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,6 +579,20 @@ body a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+  .card-2 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 4rem;
+  }
 }
 
 .card-2::before {
@@ -532,6 +604,13 @@ body a {
   right: 0;
   background-image: url(../img/hifive.png);
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 720px) {
+  .card-2::before {
+    right: 0;
+    top: 50rem;
+  }
 }
 
 .video {
@@ -628,6 +707,12 @@ body a {
   border-top: 2px dashed black;
 }
 
+@media only screen and (max-width: 720px) {
+  .plane::after {
+    top: 37%;
+  }
+}
+
 .plane__title {
   font-size: 4.8rem;
   font-weight: 700;
@@ -651,6 +736,8 @@ body a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .timeline__text {
@@ -659,6 +746,12 @@ body a {
   line-height: 3rem;
   width: 31.2rem;
   position: relative;
+}
+
+@media only screen and (max-width: 720px) {
+  .timeline__text {
+    font-size: 2.4rem;
+  }
 }
 
 .decoration p::after {
@@ -701,6 +794,12 @@ body a {
   background-repeat: no-repeat;
   background-position: right bottom;
   border-radius: 1.6rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .subscribe::before {
+    display: none;
+  }
 }
 
 .form__title {
@@ -766,20 +865,26 @@ body a {
   line-height: 3rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .send input {
+    width: 100%;
+  }
+}
+
 .send input:focus {
   outline: none;
 }
 
 .send button {
   position: absolute;
-  left: 30.5rem;
-  top: 0.4rem;
+  left: 30rem;
   border: none;
   width: 2.6rem;
   height: 2.6rem;
   background-image: url(../img/Icon-arrow-right.svg);
   background-repeat: no-repeat;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .mail {
